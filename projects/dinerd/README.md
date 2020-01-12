@@ -1,2 +1,1 @@
-Daniel Diner
-dinerd
+#Daniel Diner, dinerd
