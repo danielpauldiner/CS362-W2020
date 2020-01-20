@@ -11,7 +11,7 @@ from collections import defaultdict
 
 #Construct the player names object
 def get_player_names(names_list = None):
-    if(names_list is None)
+    if(names_list is None):
         player_names = ["Annie","*Ben","*Carla"]
     else:
         player_names = names_list
@@ -30,7 +30,7 @@ def get_players(player_names):
     return players
 
 #Calculate how many victory cards there will be
-def get_num_victory_cards():
+def get_num_victory_cards(player_names):
     if len(player_names) > 2:
         nV = 12
     else:
@@ -42,7 +42,7 @@ def get_num_curse_cards(player_names):
     return -10 + 10 * len(player_names)
 
 #Construct the box object
-def get_box():
+def get_box(nV):
     box = {}
     box["Woodcutter"] = [Dominion.Woodcutter()] * 10
     box["Smithy"] = [Dominion.Smithy()] * 10
