@@ -17,7 +17,7 @@ def get_player_names(names_list = None):
         player_names = names_list
     return player_names
 
-#Costruct the Player objects
+#Construct the Player objects
 def get_players(player_names):
     players = []
     for name in player_names:
