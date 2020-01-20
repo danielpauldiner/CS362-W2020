@@ -96,7 +96,7 @@ def get_supply(box, player_names, nV, nC):
     supply["Curse"] = [Dominion.Curse()] * nC
     return supply
 
-#Generate teh object for the trash
+#Generate the object for the trash
 def get_trash():
     return []
 
