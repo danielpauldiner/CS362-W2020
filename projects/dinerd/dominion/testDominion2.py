@@ -5,6 +5,7 @@ Created on Sun Jan 19 2020
 @author: dinerd
 """
 
+import Dominion
 import testUtility
 
 # Get player names
@@ -21,6 +22,11 @@ supply_order = testUtility.get_supply_order()
 
 # Pick 10 cards from box to be in the supply and teh cards which are always in supply
 supply = testUtility.get_supply(box, player_names, nV, nC)
+
+"""
+Test Case: Change the coppers in the Supply to Curses
+"""
+supply["Copper"] = [Dominion.Curse()] * (60 - len(player_names) * 7)
 
 # initialize the trash
 trash = testUtility.get_trash()

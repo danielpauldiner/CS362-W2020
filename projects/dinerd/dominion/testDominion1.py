@@ -14,6 +14,11 @@ player_names = testUtility.get_player_names()
 nV = testUtility.get_num_victory_cards(player_names)
 nC = testUtility.get_num_curse_cards(player_names)
 
+"""
+Test Case: Increase the number of victory cards
+"""
+nV = 50
+
 #Define box
 box = testUtility.get_box(nV)
 
